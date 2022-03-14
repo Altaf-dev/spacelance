@@ -1,0 +1,16 @@
+<% var data = {
+title: "Для каждой страницы свой заголовок",
+description: "Какое то описание для страницы, для каждой страницы свое описание"
+}; %>
+
+<!--header-->
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main class="main-page">
+  <input id="page-name" type="text" value="main-page" hidden>
+
+</main>
+
+
+<!--footer-->
+<%= _.template(require('./../includes/footer.html').default)(data) %>
